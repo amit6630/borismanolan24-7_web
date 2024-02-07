@@ -74,7 +74,7 @@
       "enabled": true
     },
     "favicon": false,
-    "mbrsiteDomain": "0rj4at7dq7",
+    "mbrsiteDomain": "4gn3e6kzey",
     "usedWebp": false,
     "cssOptimize": false,
     "lazyLoad": false,
@@ -84,7 +84,8 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "pwa-switcher": false
+    "pwa-switcher": false,
+    "google-analytics": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-1SZ9RZ7L1B\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-1SZ9RZ7L1B');\n</script>"
   },
   "pages": {
     "index.html": {
