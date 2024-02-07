@@ -50,13 +50,41 @@
         "url": "https://fonts.googleapis.com/css?family=Assistant:200,300,400,500,600,700,800"
       }
     ],
-    "uniqCompNum": 12,
+    "uniqCompNum": 13,
     "versionPublish": "5.9.4",
     "mcSmartCart": {
       "currency": "USD"
     },
     "imageResize": true,
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "chatbutton": {
+      "phone": "+972533211111",
+      "message": "",
+      "size": "65px",
+      "backgroundColor": "#e5ddd5",
+      "position": "left",
+      "popupMessage": "הי👋\n\nלכל שאלה או פנייה מוזמנים לפנות 🔥\n\n",
+      "showPopup": true,
+      "showOnIE": true,
+      "autoOpenTimeout": "5",
+      "headerColor": "#39847a",
+      "headerTitle": "דברו איתי",
+      "placeholder": "!תכתוב כאן",
+      "zIndex": 10,
+      "enabled": true
+    },
+    "favicon": false,
+    "mbrsiteDomain": "0rj4at7dq7",
+    "usedWebp": false,
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": false
   },
   "pages": {
     "index.html": {
@@ -1312,53 +1340,26 @@
           "_params": {}
         },
         {
-          "_name": "map01",
-          "_sourceTheme": "branchm4",
+          "_name": "map3",
+          "_sourceTheme": "mobirise5",
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "overflow": "hidden",
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = \"color\")": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
-            ".content": {
-              "@media (max-width: 767px)": {
-                "text-align": "center",
-                "> div:not(:last-child)": {
-                  "margin-bottom": "2rem"
-                }
-              }
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
             },
             ".google-map": {
-              "height": "50rem",
-              "width": "100%",
+              "height": "350px",
               "position": "relative",
-              "box-shadow": "2.5px 4.3px 29px 0 rgba(0, 0, 0, 0.18)",
               "iframe": {
                 "height": "100%",
                 "width": "100%"
               },
-              ".gmnoprint": {
-                "left": "-1rem !important",
-                "top": "-1rem !important"
-              },
-              ".gm-style .place-card-large": {
-                "margin": "1rem !important"
-              },
-              ".container-fluid": {
-                "padding-left": "0 !important",
-                "padding-right": "0 !important",
-                "@media (min-width: 992px)": {
-                  "padding-left": "0 !important",
-                  "padding-right": "0 !important"
-                }
-              },
               "[data-state-details]": {
                 "color": "#6b6763",
-                "font-family": "Montserrat",
                 "height": "1.5em",
                 "margin-top": "-0.75em",
                 "padding-left": "1.25rem",
@@ -1374,154 +1375,22 @@
               "&[data-state=\"loading\"]": {
                 "[data-state-details]": {
                   "display": "none"
-                },
-                "&::after": {}
-              }
-            },
-            "@media (max-width: 992px)": {
-              ".google-map": {
-                "width": "100%"
-              },
-              ".container-fluid": {
-                "padding-left": "0 !important",
-                "padding-right": "0 !important"
-              }
-            },
-            "@media (max-width: 820px)": {
-              ".cell1": {
-                "display": "none !important"
-              }
-            },
-            ".infobox1": {
-              "color": "grey",
-              "font-size": "15px",
-              "font-weight": "300",
-              "line-height": "1.7",
-              "margin": "28.8rem 5rem",
-              "max-width": "690px",
-              "position": "absolute",
-              "z-index": "9",
-              "@media (max-width: 767px)": {
-                "margin": "10rem 2rem"
-              },
-              ".infobox-table": {
-                ".infobox-row": {
-                  ".cell1": {
-                    "img": {
-                      "max-width": "100%"
-                    }
-                  },
-                  ".cell2": {
-                    "padding": "41px 62px",
-                    "width": "466px",
-                    "background-color": "black",
-                    "font-weight": "300 !important",
-                    "line-height": "1.6 !important",
-                    "@media (max-width: 767px)": {
-                      "padding": "10px 20px"
-                    },
-                    "a": {
-                      "background": "0 0",
-                      "border": "0",
-                      "font-size": "100%",
-                      "margin": "0",
-                      "outline": "0",
-                      "padding": "0",
-                      "vertical-align": "baseline",
-                      "color": "white",
-                      "margin-bottom": "10px",
-                      "margin-top": "1px",
-                      "position": "relative",
-                      "&::before": {
-                        "background-color": "currentColor",
-                        "bottom": "-2px",
-                        "content": "\"\"",
-                        "display": "block",
-                        "height": "1px",
-                        "left": "auto",
-                        "position": "absolute",
-                        "right": "0",
-                        "width": "100%",
-                        "box-sizing": "border-box"
-                      }
-                    }
-                  }
                 }
               }
             },
-            ".infobox2": {
-              "display": "none"
+            ".mbr-section-title": {
+              "color": "#847046"
             },
-            "@media (max-width: 768px)": {
-              ".infobox1": {
-                "display": "none"
-              },
-              ".infobox2": {
-                "display": "block",
-                "color": "grey",
-                "font-weight": "300",
-                "line-height": "1.7",
-                "margin": "12rem 5rem",
-                "max-width": "690px",
-                "position": "relative",
-                "z-index": "9",
-                "@media (max-width: 767px)": {
-                  "margin": "0rem 2rem"
-                },
-                ".infobox-table": {
-                  ".infobox-row": {
-                    ".cell1": {
-                      "img": {
-                        "max-width": "100%"
-                      }
-                    },
-                    ".cell2": {
-                      "padding": "41px 62px",
-                      "width": "466px",
-                      "background-color": "black",
-                      "font-weight": "300 !important",
-                      "line-height": "1.6 !important",
-                      "@media (max-width: 767px)": {
-                        "padding": "10px 20px"
-                      },
-                      "a": {
-                        "background": "0 0",
-                        "border": "0",
-                        "font-size": "100%",
-                        "margin": "0",
-                        "outline": "0",
-                        "padding": "0",
-                        "vertical-align": "baseline",
-                        "color": "white",
-                        "margin-bottom": "10px",
-                        "margin-top": "1px",
-                        "position": "relative",
-                        "&::before": {
-                          "background-color": "currentColor",
-                          "bottom": "-2px",
-                          "content": "\"\"",
-                          "display": "block",
-                          "height": "1px",
-                          "left": "auto",
-                          "position": "absolute",
-                          "right": "0",
-                          "width": "100%",
-                          "box-sizing": "border-box"
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            ".mbr-text, .mbr-section-btn": {
-              "text-align": "center"
+            ".mbr-section-subtitle": {
+              "color": "#ffeb69"
             }
           },
-          "_customHTML": "<section data-bs-version=\"5.1\" group=\"Map\" class=\"map1\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d431870.16664740216!2d35.1513612!3d32.2584676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d3e1fbf227d3d%3A0xc1c733843ff9e59d!2z15TXqdeo15XXnw!5e0!3m2!1siw!2sil!4v1707056589785!5m2!1siw!2sil&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;></iframe>\" value=\"<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d431870.16664740216!2d35.1513612!3d32.2584676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d3e1fbf227d3d%3A0xc1c733843ff9e59d!2z15TXqdeo15XXnw!5e0!3m2!1siw!2sil!4v1707056589785!5m2!1siw!2sil&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;></iframe>\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#edefeb\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container-fluid\">\n        <div class=\"row content\">\n            <div class=\"col-12 p-0\">\n                <h2 class=\"mbr-section-title align-left mbr-bold pb-4 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showmainTitle\">Contacts</h2>\n                <div class=\"infobox1\">\n                    <div class=\"infobox-table d-table w-100\">\n                        <div class=\"infobox-row d-table-row\">\n                            <div class=\"cell1 d-table-cell align-middle\">\n                                <img src=\"@PROJECT_PATH@/assets/images/amol-tyagi-0juktkotkpu-unsplash-448x560.jpg\" alt>\n                            </div>\n                            <div class=\"cell2 d-table-cell align-middle\">\n                                <p class=\"mbr-text align-left mbr-fonts-style mbr-white mbr-light\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>טלפון<br></b><a href=\"tel:⁦+972 53-321-1111⁩\" class=\"text-white\">⁦+972 53-321-1111⁩</a><br><b>:אימייל<br></b><a href=\"mailto:Lital1212ho@gmail.com\" class=\"text-white\">Lital1212ho@gmail.com</a><br><b>:שעות פעילות<br></b>24/7<br><b>:מיקום השירות<br></b>השרון והסביבה</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"google-map\" mbr-map=\"googleMap\"></div>\n\n            </div>\n            <div class=\"col-12\">\n                <div class=\"infobox2 mb-4\">\n                    <div class=\"infobox-table d-table w-100\">\n                        <div class=\"infobox-row d-table-row\">\n                            <div class=\"cell1 d-table-cell align-middle\">\n                                <img src=\"@PROJECT_PATH@/assets/images/background5.jpg\" alt=\"Mobirise\">\n                            </div>\n                            <div class=\"cell2 d-table-cell align-middle\">\n                                <p class=\"mbr-text align-left mbr-fonts-style mbr-white mbr-light\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text, .mbr-section-btn\">666\n                                    Example Road, Example Street London, Example Kingdom<br><br> Jack Jackson<br><a href=\"mailto:info@example.com\" class=\"d-inline-block\">info@example.com</a><br>\n                                    +44 55\n                                    6677 8899</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n    </div>\n</section>",
-          "_anchor": "map01-8",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"map3\" group=\"Maps\">\n    \n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"map\" title=\"Map 1\" name=\"googleMap1\" place-id=\"https://www.google.com/maps/place/%D7%A0%D7%AA%D7%A0%D7%99%D7%94%E2%80%AD/@32.3048468,34.9427902,12z/data=!3m1!4b1!4m6!3m5!1s0x151d400493c075d5:0x2cd995be543c3f22!8m2!3d32.321458!4d34.853196!16zL20vMDF2dG1o?entry=ttu\" value=\"https://www.google.com/maps/place/%D7%A0%D7%AA%D7%A0%D7%99%D7%94%E2%80%AD/@32.3048468,34.9427902,12z/data=!3m1!4b1!4m6!3m5!1s0x151d400493c075d5:0x2cd995be543c3f22!8m2!3d32.321458!4d34.853196!16zL20vMDF2dG1o?entry=ttu\">\n        <input type=\"map\" title=\"Map 2\" name=\"googleMap2\" place-id=\"https://www.google.com/maps/place/%D7%9B%D7%A4%D7%A8+%D7%A1%D7%91%D7%90%E2%80%AD/@32.1875241,35.0639034,11.08z/data=!4m6!3m5!1s0x151d39b32151955f:0x8e50c5f354fa376a!8m2!3d32.178195!4d34.90761!16zL20vMDF2dGZr?entry=ttu\" value=\"https://www.google.com/maps/place/%D7%9B%D7%A4%D7%A8+%D7%A1%D7%91%D7%90%E2%80%AD/@32.1875241,35.0639034,11.08z/data=!4m6!3m5!1s0x151d39b32151955f:0x8e50c5f354fa376a!8m2!3d32.178195!4d34.90761!16zL20vMDF2dGZr?entry=ttu\">\n        <input type=\"map\" title=\"Map 3\" name=\"googleMap3\" place-id=\"https://www.google.com/maps/place/%D7%A8%D7%A2%D7%A0%D7%A0%D7%94%E2%80%AD/@32.1896888,34.937126,13z/data=!3m1!4b1!4m6!3m5!1s0x151d3872f83085e1:0x114f1d00a75dbad1!8m2!3d32.184781!4d34.871326!16zL20vMGc5eXk?entry=ttu\" value=\"https://www.google.com/maps/place/%D7%A8%D7%A2%D7%A0%D7%A0%D7%94%E2%80%AD/@32.1896888,34.937126,13z/data=!3m1!4b1!4m6!3m5!1s0x151d3872f83085e1:0x114f1d00a75dbad1!8m2!3d32.184781!4d34.871326!16zL20vMGc5eXk?entry=ttu\">\n        <input type=\"map\" title=\"Map 4\" name=\"googleMap4\" place-id=\"https://www.google.com/maps/place/%D7%A8%D7%9E%D7%AA+%D7%94%D7%A9%D7%A8%D7%95%D7%9F%E2%80%AD/@32.1354555,34.8730809,13z/data=!3m1!4b1!4m6!3m5!1s0x151d484be5486675:0x8d59955a0441a110!8m2!3d32.137793!4d34.840278!16zL20vMDF0cGZn?entry=ttu\" value=\"https://www.google.com/maps/place/%D7%A8%D7%9E%D7%AA+%D7%94%D7%A9%D7%A8%D7%95%D7%9F%E2%80%AD/@32.1354555,34.8730809,13z/data=!3m1!4b1!4m6!3m5!1s0x151d484be5486675:0x8d59955a0441a110!8m2!3d32.137793!4d34.840278!16zL20vMDF0cGZn?entry=ttu\">\n        <input type=\"map\" title=\"Map 5\" name=\"googleMap5\" place-id=\"https://www.google.com/maps/place/%D7%A8%D7%A9%D7%A4%D7%95%D7%9F%E2%80%AD/@32.1998526,34.841585,14.04z/data=!4m6!3m5!1s0x151d47b6b3a0374b:0xa0fec10533dad8f!8m2!3d32.201856!4d34.824723!16s%2Fm%2F04dyz4f?entry=ttu\" value=\"https://www.google.com/maps/place/%D7%A8%D7%A9%D7%A4%D7%95%D7%9F%E2%80%AD/@32.1998526,34.841585,14.04z/data=!4m6!3m5!1s0x151d47b6b3a0374b:0xa0fec10533dad8f!8m2!3d32.201856!4d34.824723!16s%2Fm%2F04dyz4f?entry=ttu\">\n<input type=\"map\" title=\"Map 6\" name=\"googleMap6\" place-id=\"https://www.google.com/maps/place/%D7%92%D7%A2%D7%A9%E2%80%AD/@32.2292095,34.8293564,16z/data=!3m1!4b1!4m6!3m5!1s0x151d471b663c427f:0xae9fdf830ecae57f!8m2!3d32.228477!4d34.824411!16s%2Fm%2F04f2r6m?entry=ttu\" value=\"https://www.google.com/maps/place/%D7%92%D7%A2%D7%A9%E2%80%AD/@32.2292095,34.8293564,16z/data=!3m1!4b1!4m6!3m5!1s0x151d471b663c427f:0xae9fdf830ecae57f!8m2!3d32.228477!4d34.824411!16s%2Fm%2F04f2r6m?entry=ttu\">\n         <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1-5.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block of parameters -->\n    </mbr-parameters>\n    \n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class mbr-class=\"{'container' : !fullWidth, 'container-fluid' : fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h3 class=\"mbr-section-title mb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>המיקומים שלי</b></h3>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <h4 class=\"mbr-section-subtitle mb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>נתניה והסביבה</b></h4>\n                <div class=\"google-map\" mbr-map=\"googleMap1\"></div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <h4 class=\"mbr-section-subtitle mb-3 mt-5 mt-lg-0 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>כפר סבא והסביבה</b></h4>\n                <div class=\"google-map\" mbr-map=\"googleMap2\"></div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <h4 class=\"mbr-section-subtitle mb-3 mt-5 mt-lg-0 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>רעננה&nbsp; והסביבה</b></h4>\n                <div class=\"google-map\" mbr-map=\"googleMap3\"></div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <h4 class=\"mbr-section-subtitle mb-3 mt-5 mt-lg-0 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>רמת השרון והסביבה</b></h4>\n                <div class=\"google-map\" mbr-map=\"googleMap4\"></div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <h4 class=\"mbr-section-subtitle mb-3 mt-5 mt-lg-0 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>רשפון והסביבה</b></h4>\n                <div class=\"google-map\" mbr-map=\"googleMap5\"></div>\n            </div>\n            <div class=\"col-12 col-lg-6\">\n                <h4 class=\"mbr-section-subtitle mb-3 mt-5 mt-lg-0 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\"><b>געש והסביבה</b></h4>\n                <div class=\"google-map\" mbr-map=\"googleMap6\"></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "map3-c",
           "_isUserblock": true,
-          "_cid": "u3ksQkWoGp",
+          "_cid": "u3D1o9cZA6",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
